@@ -108,3 +108,19 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+#countres-container {
+  border: 2px solid #aa3bff;
+  border-radius: 10px;
+  margin: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  padding: 20px;
+}
+
+#country-container {
+  border: 2px solid rgba(223, 197, 28, 0.812);
+  border-radius: 5px;
+}

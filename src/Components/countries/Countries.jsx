@@ -1,12 +1,18 @@
 import React, { use } from "react";
+import Country from "../Country/Country";
 
 const Countries = ({ countriesPromise }) => {
   const allCountries = use(countriesPromise);
   const countries = allCountries.countries;
+  console.log(allCountries);
   return (
     <div>
       <h2>Countries page {countries?.length} total countries</h2>
-      <div id="country-container"></div>
+      <div id="countres-container">
+        {countries.map((country, idx) => (
+          <Country country={country} key={idx}></Country>
+        ))}
+      </div>
     </div>
   );
 };
