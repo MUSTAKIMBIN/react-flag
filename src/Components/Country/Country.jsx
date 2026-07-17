@@ -1,10 +1,16 @@
 import React, { useState } from "react";
 
-const Country = ({ country }) => {
+const Country = ({ country, totalVisited, setTotialVisted }) => {
   const { name, population, flags, region } = country;
   //   console.log(country);
   const [visited, setVisited] = useState(false);
+
   const handleVisited = () => {
+    if (visited) {
+      setTotialVisted(totalVisited - 1);
+    } else {
+      setTotialVisted(totalVisited + 1);
+    }
     setVisited(!visited);
   };
   return (
