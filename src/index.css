@@ -124,3 +124,15 @@ code {
   border: 2px solid rgba(223, 197, 28, 0.812);
   border-radius: 5px;
 }
+
+button {
+  padding: 5px 8px;
+  background-color: #c084fc;
+  color: black;
+  border: 2px solid #aa3bff;
+  border-radius: 5px;
+}
+
+.visited {
+  background-color: rgba(0, 128, 0, 0.246);
+}
