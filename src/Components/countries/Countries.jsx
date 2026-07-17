@@ -4,7 +4,6 @@ import Country from "../Country/Country";
 const Countries = ({ countriesPromise }) => {
   const allCountries = use(countriesPromise);
   const countries = allCountries.countries;
-  console.log(allCountries);
   return (
     <div>
       <h2>Countries page {countries?.length} total countries</h2>
